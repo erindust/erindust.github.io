@@ -1,0 +1,80 @@
+
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<script>
+		function banner(){
+			var text = confirm("Did you really want to click on my banner?");
+			return text;
+		} // function banner
+		function answer(){
+			var radio = document.getElementsByName("trivia"); 
+			var selection = false; 
+			var message = "";
+
+			for( var i = 0; i < radio.length; i++) { 
+				if(radio[i].value == "wbl" && radio[i].checked == true) { 
+					selection = true; 
+				} //end if statement 
+			} //end for loop
+			if(selection == true) {
+				message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+			} else { 
+				message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+			}
+			document.getElementById("trivia8.2").innerHTML = message;
+
+		} //function answer
+		
+	</script>
+	<title>Lesson 2.2</title> 
+</head> 
+<body> 
+	<a href="http://yahoo.com" onclick="return banner()">
+		<header> Hello from Lesson 5.1!
+			<center>
+				<img src="https://metrouk2.files.wordpress.com/2017/01/heath-29.jpg" height="225" width="400">
+			</center>
+		</header>
+	</a>
+	
+	
+	
+	<br/>
+	
+	<div class="wrap-trivia">
+		<h2>
+			Baseball Trivia Question
+
+		</h2>
+		<p>
+			What is the color of the Los Angeles Dodgers uniform?
+		</p>
+	
+		<form>
+			<div id="trivia8.2">
+			</div>
+			<input type="radio" name="trivia" value="ybw"> Yellow with brown stipes <br> 
+			<input type="radio" name="trivia" value="wbl"> White with blue stripes <br>
+			<input type="radio" name="trivia" value="rw"> Red and White <br>
+			<input type="radio" name="trivia" value="pw"> Purple and White <br>
+			<input type="button" value="Submit" onclick="answer()">
+		</form>
+	</div>
+	
+	
+	<hr />
+	
+	
+	<br/>
+	
+	<br/>
+	
+	<br/>
+	
+	<footer>Goodbye from 5.1!
+		<br/>
+		Website created by: Erin Nelson
+	</footer>
+</body> 
+</html>

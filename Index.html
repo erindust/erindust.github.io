@@ -1,0 +1,137 @@
+
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<script>
+		function banner(){
+			var text = confirm("Did you really want to click on my banner?");
+			return text;
+		} // function banner
+		function answer(){
+			var radio = document.getElementsByName("trivia"); 
+			var selection = false; 
+			var message = "";
+
+			for( var i = 0; i < radio.length; i++) { 
+				if(radio[i].value == "wbl" && radio[i].checked == true) { 
+					selection = true; 
+				} //end if statement 
+			} //end for loop
+			if(selection == true) {
+				message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+			} else { 
+				message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+			}
+			document.getElementById("trivia8.2").innerHTML = message;
+
+		} //function answer
+		
+	</script>
+	<title>Lesson 2.2</title> 
+</head> 
+<body> 
+	<a href="http://yahoo.com" onclick="return banner()">
+		<header> Hello from Lesson 5.1!
+
+
+			<center>
+				<img src="https://metrouk2.files.wordpress.com/2017/01/heath-29.jpg" height="225" width="400">
+			</center>
+
+		</header>
+	</a>
+	<nav>
+		<ul id="navmenu">
+			<li class="navitem"><a class="homelink" href="home.html"> Home</a></li>
+			<li class="navitem"><a class="aboutmelink" href="AboutMe.html">AboutMe</a></li>
+			<li class="navitem"><a class="contactlink" href="contact.html">Contact</a></li>
+			<li class="navitem"><a class="gameslink" href="games.html">Games</a></li>
+			<li class="navitem">
+				<!--<a class="imagegallerylink" href="ImageGallery.html"> -->
+				<a class="imagegallerylink" href="">
+					Image Gallery
+				</a> 
+			</li>
+		</ul>
+	</nav>
+	<div id="Column1">
+		Cooperative learning refers to a set of instructional techniques in which students work together in small groups to complete an assignment or project. Students are assigned individual roles such as that of a facilitator, recorder, or time-keeper and are given the opportunity to share their knowledge of the topic. Teachers have modified the “one size fits all” cooperative learning model to create a variety of models that serve unique purposes such as grouping students across age and subject area.
+	</div>
+	<div id="Column2">
+		Teacher Tip:
+
+		Asking students to work in cooperative groups is an effective technique as long as the roles are understood and student behavior is at an acceptable level.
+	</div>
+	<br/>
+	<span class="span-h1">
+		<h1>
+			Doing the work to complete Lesson 2.2.
+		</h1>
+	</span>
+	<p class="paragraph">
+		This is a <u>test</u> of the <b>emergency broadcast system</b>.
+		I wish to <i>move fast</i> through these assignments.
+	</p>
+	<div class="list-items">
+		<ol>
+	  		<li class="listitem">Postum</li>
+	  		<li class="listitem">Tea</li>
+	  		<li class="listitem">Milk</li>
+		</ol>
+		<ul>
+			<li class="listitem">red</li>
+			<li class="listitem">yellow</li>
+			<li class="listitem">blue</li>
+		</ul>
+	</div>
+	<div class="wrap-trivia">
+		<h2>
+			Baseball Trivia Question
+
+		</h2>
+		<p>
+			What is the color of the Los Angeles Dodgers uniform?
+		</p>
+	
+		<form>
+			<div id="trivia8.2">
+			</div>
+			<input type="radio" name="trivia" value="ybw"> Yellow with brown stipes <br> 
+			<input type="radio" name="trivia" value="wbl"> White with blue stripes <br>
+			<input type="radio" name="trivia" value="rw"> Red and White <br>
+			<input type="radio" name="trivia" value="pw"> Purple and White <br>
+			<input type="button" value="Submit" onclick="answer()">
+		</form>
+	</div>
+	<img src="https://imagecomics.com/uploads/releases/MorningGlories_vol10-1.png">
+	<img src="https://imagecomics.com/uploads/releases/TheAutumnlands_14-1.png">
+	<hr />
+	<center>Erin Nelson
+		<a href="https://imagecomics.com/comics/new-releases">Image Comics</a>
+	</center>
+	
+	<br/>
+	<video width="400" height="220" controls autoplay>
+		<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video> 
+	<br/>
+	<video width="720" height="405" controls>
+		<source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.mp4" type="video/mp4">
+		<source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.ogg" type="video/ogg">
+		<source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.webm" type="video/webm">
+		Your browser does not support the video tag or the file format of this video. <a href="http://www.webestools.com/">http://www.webestools.com/</a>
+	</video>
+	<br/>
+	<iframe width="854" height="480" src="https://www.youtube.com/embed/EGwQ78kY0xA" frameborder="0" allowfullscreen></iframe>
+	<br/>
+	<audio width="400" height="220" controls autoplay>
+		<source src="http://www.mediacollege.com/downloads/sound-effects/space/Radio_Waves_Earth_Magnetosphere.mp3" type="audio/mpeg">
+		Your browser does not support HTML 5 audio.
+	</audio>  
+	<footer>Goodbye from 5.1!
+		<br/>
+		Website created by: Erin Nelson
+	</footer>
+</body> 
+</html>

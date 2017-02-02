@@ -1,0 +1,167 @@
+		p{
+			color:blue;
+			font-size:18px;
+		}
+		.listitem{
+			color:red;
+			font-size:20px;
+		}
+		.paragraph{
+			color:blue;
+			font-size:2.5em;
+			text-transform: capitalize;
+		}
+		header{
+			height:250px;
+			width:75%;
+			border:3px solid black;
+			background-color:#83ce1a;
+			margin-bottom: 120px;
+
+		}
+		footer{
+			height:250px;
+			width:75%;
+			border:3px solid black;
+			background-color:#83ce1a;
+			
+		}
+		.wrap-trivia{
+			height:500px;
+			width:450px;
+			border:5px double yellow;
+			padding: 10px;
+		}
+		.list-items{
+			height:200px;
+			width:400px;
+			border:5px dashed blue;
+			margin: auto;
+
+		}
+		.span-h1{
+			color:purple;
+			font-size:2.1em;
+		}
+		#div1{
+			height:150px;
+			width: 150px;
+			background-color: red;
+			display:inline-block;
+			position: absolute;
+			z-index: 1;
+
+		}
+		#div2{
+			height:150px;
+			width:150px;
+			background-color: green;
+			display:inline-block;
+			position: absolute;
+			z-index: 2;
+			position: fixed;
+			left: 25%;
+
+		}
+		#div3{
+			height: 750px;
+			width: 150px;
+			background-color: blue;
+			display: inline-block;
+			position: absolute;
+			left: 45%;
+
+		}
+		#body1{
+			height: 2048px;
+
+		}
+		form{
+			padding-left: 100px;
+		}
+		video{
+			float:right;
+		}
+		ul{
+			list-style-type: square;
+		}
+		.navitem{
+			list-style-type: none;
+			display: inline;
+			padding-right: 50px;
+		}
+		#navmenu{
+			width: 555px;
+			height: 30px;
+			margin: auto;
+
+		}
+
+		.homelink:link{
+			color: #00CED1;
+		}
+		.AboutMelink:link{
+			color: #40E0D0;
+		}
+		.contactlink:link{
+			color: #008080;
+		}
+		.gameslink:link{
+			color: red;
+		}
+		.imagegallerylink:link{
+			color: #20B2AA;
+		}
+
+
+		.homelink:hover{
+			color:orange;
+		}
+
+		.imagegallerylink:active{
+			color:red;
+		}
+
+		/*.homelink:visited{
+			color:red;
+		}*/
+		
+		
+		
+
+		.AboutMelink:hover{
+			color: orange;
+		}
+		
+		
+		.contactlink:hover{
+			color: orange;
+		}
+		
+		.gameslink:hover{
+			color: hotpink;
+		}
+		
+		
+		.imagegallerylink:hover{
+			color: orange;
+		}
+
+
+		#column1{
+			float:right;
+			width:29%;
+			border: 1px solid powderblue;
+			margin: 100px 35px;
+			padding: 20;
+			padding-top: 10;
+
+		}
+
+		#column2{
+			float:left;
+			width:60%;
+			border: 1px solid powderblue;
+		}
+
+
